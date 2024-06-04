@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Design</title>
+    <title>Buttons</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: linear-gradient(to right, #ff512f, #dd2476);
             color: #fff;
             margin: 0;
             padding: 0;
@@ -37,7 +36,7 @@
             font-weight: bold;
         }
         nav ul li a:hover {
-            color: #ff9966;
+            color: #ff512f;
         }
         main {
             padding: 20px;
@@ -49,33 +48,37 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-        .responsive-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
-        .responsive-item {
-            flex: 1 1 100%;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            text-align: center;
+        .button-primary {
+            background: #ff512f;
+            color: #fff;
         }
-        @media (min-width: 600px) {
-            .responsive-item {
-                flex: 1 1 48%;
-            }
+        .button-primary:hover {
+            background: #dd2476;
         }
-        @media (min-width: 900px) {
-            .responsive-item {
-                flex: 1 1 30%;
-            }
+        .button-secondary {
+            background: #fff;
+            color: #ff512f;
         }
-        .media-query-example {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            text-align: center;
+        .button-secondary:hover {
+            background: #ff512f;
+            color: #fff;
+        }
+        .button-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .button-outline:hover {
+            background: #fff;
+            color: #ff512f;
         }
         footer {
             text-align: center;
@@ -90,7 +93,7 @@
 </head>
 <body>
     <header>
-        <h1>Responsive Design</h1>
+        <h1>Buttons</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -98,23 +101,24 @@
                 <li><a href="layout.html">Layout</a></li>
                 <li><a href="transitions.html">Transitions and Animations</a></li>
                 <li><a href="advanced.html">Advanced CSS</a></li>
+                <li><a href="responsive.html">Responsive Design</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Responsive Layout</h2>
-            <div class="responsive-container">
-                <div class="responsive-item">Responsive Item</div>
-                <div class="responsive-item">Responsive Item</div>
-                <div class="responsive-item">Responsive Item</div>
-            </div>
+            <h2>Button Styles</h2>
+            <p>Buttons are essential for user interaction. Here are some common button styles:</p>
+            <button class="button button-primary">Primary Button</button>
+            <button class="button button-secondary">Secondary Button</button>
+            <button class="button button-outline">Outline Button</button>
         </section>
         <section>
-            <h2>Media Queries</h2>
-            <div class="media-query-example">
-                <p>Resize the window to see the effect of media queries.</p>
-            </div>
+            <h2>Button Hover Effects</h2>
+            <p>Buttons can have hover effects to enhance user experience. Here are some examples:</p>
+            <button class="button button-primary">Primary Button</button>
+            <button class="button button-secondary">Secondary Button</button>
+            <button class="button button-outline">Outline Button</button>
         </section>
     </main>
     <footer>
