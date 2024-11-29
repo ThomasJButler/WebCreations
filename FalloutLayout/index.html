@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Inspired Pip-Boy UI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="retro-container old-crt-monitor">
+        <header>
+            <h1>Pip-Boy 3000</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a class="nav-link" href="#screen-1">STATUS</a></li>
+                    <li><a class="nav-link" href="#screen-2">INVENTORY</a></li>
+                    <li><a class="nav-link" href="#screen-3">DATA</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="screen-1">
+                <article>
+                    <header>
+                        <h2>STATUS</h2>
+                    </header>
+                    <div class="content">
+                        <p>Name: Link</p>
+                        <p>Hearts: ♥♥♥♥♥♥♥♥♥♥</p>
+                        <p>Level: Hero of Time</p>
+                        <p>EXP: 1500 / 2000</p>
+                        <p>Strength: 8</p>
+                        <p>Wisdom: 7</p>
+                        <p>Courage: 10</p>
+                    </div>
+                </article>
+            </section>
+            <section id="screen-2">
+                <article>
+                    <header>
+                        <h2>INVENTORY</h2>
+                    </header>
+                    <div class="content">
+                        <p>- Master Sword</p>
+                        <p>- Hylian Shield</p>
+                        <p>- Bow and Arrows</p>
+                        <p>- Bombs</p>
+                        <p>- Hookshot</p>
+                        <p>- Ocarina of Time</p>
+                    </div>
+                </article>
+            </section>
+            <section id="screen-3">
+                <article>
+                    <header>
+                        <h2>DATA</h2>
+                    </header>
+                    <div class="content">
+                        <p>Location: Hyrule</p>
+                        <p>Objective: Defeat Ganon</p>
+                        <p>Notes: Seek the Triforce to restore peace to Hyrule.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Created by [Your Name] - All Rights Reserved</p>
+        </footer>
+        <div class="crt"></div>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const main = document.querySelector('main');
+
+                if (targetElement) {
+                    main.scrollTo({
+                        top: targetElement.offsetTop - main.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

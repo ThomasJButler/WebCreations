@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Apprentice Web Developer Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Thomas J Butler</h1>
+        <h3>Apprentice Web Developer Mastering the Craft</h3>
+        <p>Scroll To See More</p>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#art">Art Gallery</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div id="matrix">
+        <canvas id="matrixCanvas"></canvas>
+    </div>
+    <section id="introduction">
+        <div class="container">
+            <h2>Welcome to My Personal Portfolio</h2>
+            <p>Hello! I'm Thomas J Butler, an aspiring software wizard from the UK. I'm on a quest to master the magical arts of web development. Join me as I transform into the king of all software developers!</p>
+            <div class="introduction-img">
+                <img src="assets/images/image1.png" alt="Placeholder Image">
+                <img src="assets/images/image2.png" alt="Placeholder Image">
+                <img src="assets/images/image3.png" alt="Placeholder Image">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>HTML5</h3>
+                    <p>Mastering the ancient language of HTML, I craft the structure and backbone of all web pages.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS3</h3>
+                    <p>With the power of CSS, I bring style and elegance to the web, ensuring every site is responsive and animated.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript is my wand, adding interactivity and dynamic magic to web applications.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <p>React enables me to create dynamic user interfaces, making the web a more interactive place.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Node.js</h3>
+                    <p>Node.js is the heart of my server-side spells, crafting powerful and scalable backend solutions.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <p>With Python, I automate and script complex processes, adding efficiency to my magic toolkit.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>SQL</h3>
+                    <p>SQL allows me to manipulate and manage databases, ensuring data is stored and retrieved effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Project 1: The Enchanted Web</h3>
+                    <p>An innovative website that showcases the power of modern web technologies through spellbinding design.</p>
+                    <img src="assets/images/image1.png" alt="Project Image 1">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 2: Habit Tracker</h3>
+                    <p>A web app that helps users track their daily habits and progress, ensuring they stay on the path of productivity.</p>
+                    <img src="assets/images/image2.png" alt="Project Image 2">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 3: My Portfolio</h3>
+                    <p>A creative portfolio that demonstrates my skills and projects, designed to impress and inspire.</p>
+                    <img src="assets/images/image3.png" alt="Project Image 3">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 4: Interactive Game</h3>
+                    <p>An interactive game built with JavaScript and Canvas API, providing entertainment and learning in one package.</p>
+                    <img src="assets/images/image4.png" alt="Project Image 4">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 5: Stock Predictor</h3>
+                    <p>A machine learning model that predicts stock prices with high accuracy, showcasing the power of AI.</p>
+                    <img src="assets/images/image1.png" alt="Project Image 5">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 6: Social Connect</h3>
+                    <p>A social media platform designed for seamless connectivity, bringing people together in a digital world.</p>
+                    <img src="assets/images/image2.png" alt="Project Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="apps">
+        <div class="container">
+            <h2>Apps</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>App 1: Productivity Wizard</h3>
+                    <p>A mobile app designed to improve productivity and task management, helping users achieve their goals.</p>
+                    <img src="assets/images/image1.png" alt="App Image 1">
+                </div>
+                <div class="grid-item">
+                    <h3>App 2: E-commerce Enchanter</h3>
+                    <p>An e-commerce app with a seamless user experience and modern design, making online shopping a breeze.</p>
+                    <img src="assets/images/image2.png" alt="App Image 2">
+                </div>
+                <div class="grid-item">
+                    <h3>App 3: Fitness Tracker</h3>
+                    <p>A fitness app that tracks your workouts and progress over time, helping you stay fit and healthy.</p>
+                    <img src="assets/images/image3.png" alt="App Image 3">
+                </div>
+                <div class="grid-item">
+                    <h3>App 4: Budget Manager</h3>
+                    <p>A finance app that helps you manage your budget and expenses, ensuring financial stability.</p>
+                    <img src="assets/images/image4.png" alt="App Image 4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="games">
+        <div class="container">
+            <h2>Games</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Game 1: Puzzle Master</h3>
+                    <p>An addictive puzzle game with engaging gameplay mechanics that challenge the mind.</p>
+                    <img src="assets/images/image1.png" alt="Game Image 1">
+                </div>
+                <div class="grid-item">
+                    <h3>Game 2: Retro Racer</h3>
+                    <p>A retro-style platformer with a modern twist, combining nostalgia with new-age graphics.</p>
+                    <img src="assets/images/image2.png" alt="Game Image 2">
+                </div>
+                <div class="grid-item">
+                    <h3>Game 3: Strategy Master</h3>
+                    <p>A multiplayer strategy game that tests your tactical skills against players worldwide.</p>
+                    <img src="assets/images/image3.png" alt="Game Image 3">
+                </div>
+                <div class="grid-item">
+                    <h3>Game 4: Fantasy RPG</h3>
+                    <p>An immersive RPG with stunning graphics and a captivating story that keeps players engaged.</p>
+                    <img src="assets/images/image4.png" alt="Game Image 4">
+                </div>
+                <div class="grid-item">
+                    <h3>Game 5: Racing Legend</h3>
+                    <p>A racing game with realistic physics and intense action, providing an adrenaline rush.</p>
+                    <img src="assets/images/image1.png" alt="Game Image 5">
+                </div>
+                <div class="grid-item">
+                    <h3>Game 6: Learning Wizard</h3>
+                    <p>An educational game that makes learning fun and interactive, perfect for all ages.</p>
+                    <img src="assets/images/image2.png" alt="Game Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Greetings! I'm Thomas J Butler, an apprentice web developer from the UK with dreams as grand as the highest castle turrets. My journey through the realms of code and design is driven by an insatiable curiosity and a passion for crafting digital wonders. From the basics of HTML to the complexities of full-stack development, my quest is to master the craft and one day become the king of all software developers.</p>
+            <p>When I'm not conjuring code, you can find me exploring the latest tech trends, experimenting with new frameworks, and contributing to open-source projects. My downtime is filled with photography, hiking, and playing the guitar, as I believe a well-rounded lifestyle fuels creativity and problem-solving skills.</p>
+            <p>Join me on this epic adventure as I transform from a young apprentice into a legendary wizard of the web. Let's create, innovate, and inspire!</p>
+        </div>
+    </section>
+    <section id="art">
+        <div class="container">
+            <h2>Art Gallery</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="assets/images/image1.png" alt="Art Image 1">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image2.png" alt="Art Image 2">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image3.png" alt="Art Image 3">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image4.png" alt="Art Image 4">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image1.png" alt="Art Image 5">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image2.png" alt="Art Image 6">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image3.png" alt="Art Image 7">
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/image4.png" alt="Art Image 8">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and dynamic websites tailored to your needs, ensuring a seamless user experience.</p>
+                </div>
+                <div class="service-item">
+                    <h3>App Development</h3>
+                    <p>Designing and developing mobile applications with a focus on user experience and performance.</p>
+                </div>
+                <div class="service-item">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines through advanced SEO techniques and strategies.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consulting</h3>
+                    <p>Providing expert advice and guidance on web development best practices and digital strategies.</p>
+                </div>
+                <div class="service-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and user-friendly interfaces that enhance the user experience and engagement.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Data Analysis</h3>
+                    <p>Analyzing data to provide actionable insights that drive business decisions and growth.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Content Creation</h3>
+                    <p>Developing engaging and relevant content that resonates with your audience and boosts your brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>"Thomas is an exceptional web developer with a keen eye for detail. His work on our website was outstanding and exceeded our expectations."</p>
+                    <p>- John Doe, CEO of Tech Innovators</p>
+                </div>
+                <div class="grid-item">
+                    <p>"Working with Thomas has been a fantastic experience. His expertise and dedication to his craft are truly remarkable."</p>
+                    <p>- Jane Smith, Founder of Creative Solutions</p>
+                </div>
+                <div class="grid-item">
+                    <p>"Thomas consistently delivers high-quality work on time. His ability to solve complex problems is impressive."</p>
+                    <p>- Mark Brown, Lead Developer at Web Wizards</p>
+                </div>
+                <div class="grid-item">
+                    <p>"I've worked with Thomas on multiple projects, and he never fails to impress. His skills and professionalism are top-notch."</p>
+                    <p>- Emily Johnson, Project Manager at Code Masters</p>
+                </div>
+                <div class="grid-item">
+                    <p>"Thomas's innovative approach and creative solutions have greatly benefited our business. We highly recommend him."</p>
+                    <p>- Sarah Williams, Marketing Director at Digital Dreams</p>
+                </div>
+                <div class="grid-item">
+                    <p>"A true wizard in web development, Thomas's work is nothing short of magical. He transformed our online presence."</p>
+                    <p>- Alex Taylor, COO of Startup Success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <form action="" method="POST"></form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Journey into JavaScript</h3>
+                    <p>JavaScript is the engine that drives the web. In this post, I explore the fundamentals of JS and share my experiences learning this powerful language. From creating dynamic web pages to building complex web applications, JavaScript has opened up a world of possibilities for me. Join me as I delve into its intricacies and discover its full potential.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>CSS: Crafting Beautiful Interfaces</h3>
+                    <p>CSS is where the magic happens. I dive into the world of styling, exploring techniques and tricks to make your websites look stunning. From animations to responsive design, CSS allows us to bring our web pages to life. In this post, I share my journey of mastering CSS and creating visually appealing websites.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>HTML: The Backbone of the Web</h3>
+                    <p>HTML provides the structure for all web content. Here, I share my insights into writing clean, semantic HTML code. Understanding HTML is crucial for any web developer, and in this post, I discuss the best practices and techniques that have helped me build solid foundations for my projects.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>React: Building Dynamic User Interfaces</h3>
+                    <p>React is a powerful library for building user interfaces. In this post, I discuss how I use React to create dynamic and responsive web apps. From understanding components to managing state, React has transformed the way I develop front-end applications. Join me as I explore the features and benefits of React.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Node.js: Powering the Server Side</h3>
+                    <p>Node.js is a game-changer for backend development. In this post, I cover the basics of Node.js and how I use it to build robust server-side applications. With its event-driven architecture and non-blocking I/O, Node.js allows for efficient and scalable web servers. Discover how Node.js has enhanced my backend development skills.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Python: The Versatile Language</h3>
+                    <p>Python is a versatile language that can be used for a wide range of applications. In this post, I explore its various uses and how I leverage it for my projects. From scripting to data analysis, Python's simplicity and readability make it a valuable tool in my development toolkit. Learn how Python has made my coding life easier.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>SQL: Managing Data with Ease</h3>
+                    <p>SQL allows me to manipulate and manage databases efficiently. In this post, I share my experiences with SQL and how it helps me handle data effectively. From querying to data modeling, SQL is an essential skill for any developer working with databases. Explore the world of SQL and discover its power.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Machine Learning: Predicting the Future</h3>
+                    <p>Machine learning is a fascinating field that enables us to predict outcomes based on data. In this post, I delve into the basics of machine learning and share my experiences building predictive models. From training algorithms to evaluating performance, machine learning has opened up new horizons for me. Join me as I explore this exciting domain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/thomasbutleruk/">LinkedIn</a></li>
+            <li><a href="https://github.com/ThomasJButler">GitHub</a></li>
+            <li><a href="https://codepen.io/thomasbutler">CodePen</a></li>
+        </ul>
+        <p>&copy; 2024 The Ultimate Apprentice Web Developer Showcase. All rights reserved.</p>
+    </div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>

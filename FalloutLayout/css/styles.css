@@ -1,0 +1,159 @@
+:root {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    --primary-color: #ffd700;
+    --secondary-color: #ff5c00;
+    --tertiary-color: #c72d04;
+    --background-color: #000;
+    --hover-image: url('images/hyrule_symbol.png');
+    font-size: clamp(18px, 3vw, 30px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    cursor: url('./assets/mouse.svg'), auto;
+    scrollbar-color: var(--primary-color) var(--secondary-color); /* Firefox */
+    scrollbar-width: thin; /* Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust width as necessary */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); 
+    border-radius: 10px; /* Adjust as necessary */
+    border: 3px solid var(--secondary-color); /* Adjust as necessary */
+}
+
+.retro-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    position: relative;
+    background: #111;
+    background-image: var(--hover-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+header,
+footer {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+section {
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    margin: 1rem;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+section:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--hover-image);
+    opacity: 0.2;
+    z-index: 5;
+}
+
+.crt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(transparent 50%, rgba(82, 25, 194, 0.5) 50%);
+    background-size: 100% 2px;
+    opacity: 0.45;
+    z-index: 10;
+    animation: crtAnimation 0.1s steps(1) infinite;
+}
+
+@keyframes crtAnimation {
+    0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95% {
+        opacity: 0.15;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.old-crt-monitor {
+    box-shadow: inset 0px 0px 2rem var(--tertiary-color);
+    background-image: linear-gradient(0deg, #0000 10%, #fff1 90%, #0000 100%);
+    animation: crtAnimation 0.1s steps(1) infinite;
+    background-size: 100% 80%;
+}
+
+.alert {
+    animation: blink-bg 1s ease-out infinite;
+}
+
+@keyframes blink-bg {
+    0%, 60% {
+        text-shadow: 0 0 10.5rem var(--primary-color);
+        color: var(--primary-color);
+    }
+    70%, 100% {
+        text-shadow: 0 0 20.5rem var(--tertiary-color);
+        color: var(--tertiary-color);
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    margin: 0.5rem 0;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: var(--tertiary-color);
+    color: var(--background-color);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Borealis Interactive Experience</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div id="canvas-wrapper">
+        <img src="src/images/aurora-background.png" alt="Aurora Background" class="background-image">
+        <canvas id="auroraCanvas"></canvas>
+    </div>
+    <div class="controls">
+        <label for="intensity">Intensity:</label>
+        <input type="range" id="intensity" min="1" max="10" step="1" value="5">
+        <label for="color">Color Scheme:</label>
+        <select id="color">
+            <option value="greenPurple">Green & Purple</option>
+            <option value="redYellow">Red & Yellow</option>
+            <option value="blueWhite" selected>Blue & White</option>
+        </select>
+    </div>
+    <script src="src/js/aurora.js"></script>
+</body>
+</html>
